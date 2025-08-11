@@ -12,8 +12,7 @@ This is a desktop application built to demystify medical prescriptions. It uses 
 
 Have you ever looked at a doctor's prescription and felt a bit lost? The handwriting can be hard to read, and the names of the medicines are often complex. This can be a real barrier, especially for elderly individuals or anyone who isn't familiar with medical terms.
 
-I built this tool to bridge that gap. The goal is to empower patients by giving them a clear, simple understanding of their own medication, right on their own computer, without needing to upload sensitive information to the internet. Gemini Pro 2.5 was used for assistance in coding and writing.
-
+I built this tool to bridge that gap. This tool is supposed to be used by a Doctor who verifies it's output and provides a printout. The goal is to help patients by giving them a clear, simple understanding of their own medication, without needing to upload sensitive information to the internet. 
 ---
 
 ## Methods (How It Works)
@@ -26,7 +25,8 @@ The process happens in two main steps, all locally on your machine:
 
 2.  **Explanation & Translation:** The text extracted in the first step is then fed back into the *same* Phi-3.5 model with a new set of instructions. This time, it's asked to act as a helpful medical assistant, explain each medicine in layman's terms, and translate the entire explanation into your chosen language (English or Hindi).
 
-Because everything runs locally, your medical information stays completely private.
+Because everything runs locally, your medical information stays completely private.Gemini Pro 2.5 was used for assistance in coding and writing.
+
 
 ---
 
@@ -70,6 +70,6 @@ Here is the complete list of libraries you need to install:
 
 This project is a practical demonstration of how powerful local, multimodal AI models have become. We can now build tools that understand the world through images and provide helpful information, all without relying on cloud APIs. This has huge implications for privacy and accessibility.
 
-While this tool is designed to be helpful, it is important to remember that it is **not a substitute for professional medical advice**. The explanations are for informational purposes only. Always consult with your doctor or pharmacist if you have any questions about your medication.
+While this tool is designed to be helpful, it is important to remember that it is **not a substitute for professional medical advice** and is only meant to be used by a Doctor who can verify the output and provides a printout to The patient. The explanations are for informational purposes only. Always consult with your doctor or pharmacist if you have any questions about your medication.
 
 The quality of the output depends heavily on the clarity of the prescription image. A clear, well-lit photo will always yield better results.
